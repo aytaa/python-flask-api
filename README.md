@@ -38,7 +38,7 @@ The REST API to the example app is described below.
         "name": "Jhone"
     }
 
-## Create a new Thing
+## Create a new User
 
 ### Request
 
