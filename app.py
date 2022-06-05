@@ -1,6 +1,13 @@
-from flask import Flask, session, request
+from flask import Flask, request
+import mysql.connector
 
 app = Flask(__name__)
+
+mydb = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    database="movie"
+)
 
 
 @app.route("/")
@@ -11,13 +18,9 @@ def home():
     }
 
 
-@app.route("/users", methods=['GET', 'POST'])
+@app.route("/users", methods=['GET'])
 def users():
-    return {
-        "username": "Aytac",
-        "email": "aytac@aytacunal.com",
-        "age": "34"
-    }
+    return {"name": "Jhone"}
 
 
 @app.route('/login', methods=['GET', 'POST'])
