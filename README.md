@@ -17,7 +17,7 @@ The entire application is contained within the `app.py` file.
 
 The REST API to the example app is described below.
 
-## Get list of Things
+## Get list of Users
 
 ### Request
 
